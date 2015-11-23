@@ -1,0 +1,111 @@
+package Pclencap;
+
+/**
+ *
+ * @author RenataDaniela
+ */
+   /**
+     *
+     * @param numcasa
+     */
+public class Triagem {
+    //declaração de variáveis
+   float pla, pap,vid,met,org, percentlixo, totalixo,lixototal;
+   private float percentpla, percentpap,percentvid,percentmet,percentorg;
+   String numcasa;
+   
+   public String GetNumcasa (){
+   return numcasa;
+   }
+
+ 
+    public void SetNumcasa (String numcasa){
+    this.numcasa=numcasa;
+    }
+   public void SetPla (float pla){
+   this.pla=pla;
+   }
+   public float GetPla (){
+   return pla;
+   }
+  public void SetPap (float pap){
+  this.pap=pap;
+  } 
+  public float GetPap (){
+  return pap;
+  }
+  
+  public void SetVid (float vid){
+   this.vid=vid;
+  }
+  public float GetVid (){
+   return vid;
+}
+  public void SetMet (float met){
+   this.met=met;
+  }
+  public float GetMet (){
+  return met;
+  }
+
+  public void SetOrg (float org){
+  this.org=org;
+  }
+  public float GetOrg () {
+      return org;
+  }
+  
+  
+   void Somarlixo (float totalixo){
+this.lixototal= pap+pla+vid+met+org;
+}
+  public float lixototal(){
+          return lixototal;
+  }
+   
+  void Porcentopla (float pla){
+  this.percentpla= (pla*100)/totalixo;
+  
+  }
+  public float porcentpla (){
+  return percentpla;
+  }
+  void Porcentopap (float pap){
+  this.percentpap = (pap*100)/totalixo;
+  }
+  
+  public float porcentpap (){
+   return percentpap;
+  }
+  
+  void Porcentovid (float vid) {
+  this.percentvid= (vid*100)/totalixo;
+ }
+  
+  public float porcentvid  (){
+  return percentvid;
+  }
+  
+  void Porcentomet (float met){
+  this.percentmet = (met*100)/totalixo;
+  }
+  public float porcentmet(){
+return percentmet;
+}
+  
+  void Porcentoorg (float org){
+  this.percentorg = (org*100)/totalixo;  
+  }
+   
+  public float porcentorg (){
+  return percentorg;
+  }
+  
+ void Porcentolixo (float percentlixo){
+ this.percentlixo=percentlixo*totalixo/100;
+ }
+ public float porcentolixo (){
+ return percentlixo;
+ }
+
+}
