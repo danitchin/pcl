@@ -1,0 +1,44 @@
+package Pclencap;
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author Dani Alves
+ */
+public class ClasseTeste {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Triagem novaTriagem;
+        Coleta novaColeta;
+        Ponto  novoPonto;
+        Media  novaMedia;
+      Triagem casa1 = new Triagem();
+      casa1.SetPla(1.5f);
+      casa1.SetPap(2f);
+      casa1.SetVid(3f);
+      casa1.SetMet(1f);
+      casa1.SetOrg(2f);
+        
+       Triagem t; //declarando a variável que conterá referência ao objeto
+       t = new Triagem (); //instanciando um objeto na memória
+       t.numcasa = "casa um";
+       
+       //saída de resultados: 
+               System.out.println ("Número da casa: "+ t.numcasa);
+               System.out.println("Quantidade de plástico(Kg): "+casa1.GetPla());
+               System.out.println("Quantidade de papel (Kg): "+casa1.GetPap());
+               System.out.println("Quantidade de vidro(Kg): "+casa1.GetVid());
+               System.out.println("Quantidade de metal(Kg): "+casa1.GetMet());
+               System.out.println("Quantidade de resíduos orgânicos(Kg): "+casa1.GetOrg());
+               System.out.println("Quantidade total de lixo: "+ casa1.getlixototal());
+               System.out.println("Porcentagem de plástico no total do lixo: "+ casa1.getporcentpla());
+               System.out.println("Porcentagem de papel no total do lixo: "+ casa1.getporcentpap());
+               System.out.println("Porcentagem de vidro no total do lixo: "+ casa1.getporcentvid());
+               System.out.println("Porcentagem de metal no total do lixo: "+ casa1.getporcentmet());
+               System.out.println("Porcentagem de resíduo orgânico no total do lixo: "+ casa1.getporcentorg());
+               System.out.println("Porcentagem total do lixo: "+ casa1.getporcentolixo());
+    }
+    
+}
